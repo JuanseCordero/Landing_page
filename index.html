@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <section> 
+        <header> 
+            <a href="" class="logo">FITNESS</a>
+            <div class="toggle" onclick="toggle()"></div>
+            <ul class="navegacion">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Training</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="contenedor">
+            <div class="tittle">
+                <h2>Build Perfect Body</br>
+                With Clean Mind</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="#">Get Started</a>
+            </div>
+        </div>
+
+        <ul class="redes">
+            <li><a href=""><img src="./img/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="./img/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="./img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function toggle() {
+            const toggle = document.querySelector('.toggle');
+            const navegacion = document.querySelector('.navegacion');
+            toggle.classList.toggle('active')
+            navegacion.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
